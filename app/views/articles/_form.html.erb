@@ -1,10 +1,10 @@
-<%= form_with(model: articla, local: true) do |form| %>
-  <% if articla.errors.any? %>
+<%= form_with(model: article, local: true) do |form| %>
+  <% if article.errors.any? %>
     <div id="error_explanation">
-      <h2><%= pluralize(articla.errors.count, "error") %> prohibited this articla from being saved:</h2>
+      <h2><%= pluralize(article.errors.count, "error") %> prohibited this article from being saved:</h2>
 
       <ul>
-      <% articla.errors.full_messages.each do |message| %>
+      <% article.errors.full_messages.each do |message| %>
         <li><%= message %></li>
       <% end %>
       </ul>
